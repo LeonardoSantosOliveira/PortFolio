@@ -22,8 +22,8 @@
             position: absolute;
             display: inline;
             z-index: 0;
-            right: 340px;
-            top: 160px;
+            right: 20%;
+            top: 18%;
             height: 150px;
         }
 
@@ -31,15 +31,15 @@
             position: absolute;
             display: inline;
             z-index: 0;
-            left: 650px;
-            top: 125px;
+            left: 35%;
+            top: 10%;
             height: 150px;
         }
 
         &-bottom{
             position: absolute;
-            bottom: 180px;
-            left: 500px;
+            bottom: 20%;
+            left: 25%;
             height: 150px;
         }
     }
