@@ -1,0 +1,18 @@
+@use 'variables.scss';
+
+.colored{
+    color: variables.$greenColor;
+
+    &Blue{
+        color: variables.$blueColor;
+    }
+}
+
+.section-title{
+    font-weight: bolder;
+    font-size: 4em;
+}
+
+.text{
+    color: variables.$purpleColor;
+}

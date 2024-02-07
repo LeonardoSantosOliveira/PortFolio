@@ -1,0 +1,102 @@
+@use 'variables.scss';
+
+.navbar{
+    
+    padding-bottom: 20px;
+
+    &-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    &-brand{
+        font-size: 3.5em;
+        font-weight: bolder;
+        text-transform: capitalize;
+        color: variables.$greenColor;
+
+        &:hover{
+            color: variables.$greenColor;
+        }
+    }
+
+    .togglerMenu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+    }
+
+    .bar {
+        height: 3px;
+        width: 50px;
+        background-color: variables.$blueColor;
+    }
+}
+
+.navMenu{
+    width: 300px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    position: absolute;   
+    right: 280px;
+    top: 15px;
+    z-index: 9990;
+
+    .buttonCloseMenu{
+        font-size: 60px;
+        position: absolute;
+        right: 30px;
+        top: 0;
+
+        i{
+            cursor: pointer;
+        }
+    }
+
+    .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 15px;
+        padding-bottom: 30px;
+        justify-content: end;
+        padding-top: 100px;
+        text-transform: capitalize;
+
+        &-item{
+            text-align: right;
+        }
+
+        &-link{
+            font-size: 1.4em;
+            text-align: right;
+            color: variables.$blueColor;
+            font-weight: bold;
+            position: relative;
+            
+            &:hover::after{
+                width: 100%;
+            }
+            
+            &::after{
+                content: '';
+                width: 0%;
+                height: 1px;
+                background-color: variables.$blueColor;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transition: all ease .2s;
+            }
+        }
+    }
+}

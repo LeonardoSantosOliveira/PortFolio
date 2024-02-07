@@ -1,0 +1,46 @@
+#sobreMim{
+    height: 100vh;
+    padding-top: 200px;
+    z-index: 100;
+    position: relative;
+
+    .col-6:nth-child(2){
+        margin-top: 200px;
+        text-align: right;
+    }
+
+    .text{
+        margin-bottom: 20px;
+    }
+
+    .about-img{
+        position: absolute;
+        display: inline;
+        z-index: 0;
+
+        &-right{
+            position: absolute;
+            display: inline;
+            z-index: 0;
+            right: 340px;
+            top: 160px;
+            height: 150px;
+        }
+
+        &-left{
+            position: absolute;
+            display: inline;
+            z-index: 0;
+            left: 650px;
+            top: 125px;
+            height: 150px;
+        }
+
+        &-bottom{
+            position: absolute;
+            bottom: 180px;
+            left: 500px;
+            height: 150px;
+        }
+    }
+}

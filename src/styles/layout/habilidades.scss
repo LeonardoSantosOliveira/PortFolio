@@ -1,0 +1,74 @@
+@use '../modules/variables.scss';
+
+#habilidades{
+    height: 100vh;
+    background-color: variables.$blueColor;
+    position: relative;
+
+    .background-habilidades{
+        background-image: url('../../images/assets/square-of-dots.svg');
+        position: absolute;
+        bottom: 70px;
+        right: 240px;
+
+        img{
+            width: 500px;
+        }
+    }
+
+    .section-title{
+        margin-top: 100px;
+        text-align: center;
+        margin-bottom: 200px;
+    }
+
+    .habilidadeContainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .habilidade{
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.21);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        position: relative;
+
+        &::after{
+            content: '';
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            background-color: variables.$greenColor;
+            bottom: 0px;
+            left: 0;
+        }
+
+        &-nome{
+            text-align: center;
+            font-weight: bold;
+            color: variables.$darkColor;
+            font-size: 1.1em;
+            margin-bottom: -10px;
+        }
+
+        &-icon{
+            font-size: 5em;
+            color: variables.$darkColor;
+            img{
+                height: 60px;
+                width: 60px;
+            }
+        }
+    }
+}

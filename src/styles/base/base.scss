@@ -2,4 +2,12 @@
 
 *{
     font-family: "SF UI Text", "Helvetica Neue", "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.col-12{
+    padding: 0 !important;
 }

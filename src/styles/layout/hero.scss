@@ -1,0 +1,75 @@
+@use '../modules/variables.scss';
+
+#hero{
+    height: 80vh;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(72,49,212,1) 68%, rgba(204,242,129,1) 68%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .hero-text{
+        color: variables.$darkColor;
+        padding-top: 130px;
+        font-size: 3.5em;
+        font-weight: bold;
+    }
+
+    .dev-text{
+        font-weight: bold;
+        font-size: 1.8em;
+        margin-top: -16px;
+        margin-bottom: 40px;
+    }
+
+    .container-img{
+        position: relative;
+        height: 350px;   
+        top: 180px;
+        right: 447px;
+    }
+
+    .image{
+        position: absolute;
+        
+        &-img{
+            height: 100%;
+            z-index: 10;
+        }
+    }
+
+    .btn-green:nth-child(1){
+        margin-right: 10px;
+    }
+}
+
+.avatar-shape{
+    position: relative;
+    height: 70%;
+    right: 18px;
+    top: -7px;
+    font-size: 0em;
+    z-index: 0;
+}
+
+.background-border{
+    position: absolute;
+    background-color: transparent;
+    height: 350px;
+    width: 350px;
+    right: 400px;
+    top: 230px;
+    border: 2px solid #eee;
+    z-index: 0;
+}
+
+.faixaSection{
+    position: absolute;
+    top: 25%;
+    left: -50px;
+    
+    &-img{
+        height: 900px;
+        z-index: 0;
+    }
+}
