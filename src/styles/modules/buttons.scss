@@ -2,6 +2,18 @@
 
 .btn{
 
+    &-blue{
+        background-color: variables.$blueColor;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1em;
+        border: 1px solid transparent;
+        color: variables.$greenColor;
+        padding: 7px 20px;
+        transition: all ease .2s;
+        border-radius: 0 !important;
+    }
+
     &-green{
         background-color: variables.$greenColor;
         text-transform: uppercase;
@@ -17,7 +29,6 @@
             background-color: variables.$blueColor;
             border: 1px solid variables.$greenColor;
             color: variables.$greenColor;
-            transform: scale(1.05);
         }
 
         &-outline{
@@ -30,6 +41,11 @@
                 color: variables.$blueColor;
             }
         }
+        
     }
 
+    &-sm{
+        font-size: .7em !important;
+        padding: 5px 15px;
+    }
 }
