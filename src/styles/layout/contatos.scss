@@ -2,6 +2,15 @@
 
 #contato{
     height: 100vh;
-    background-color: variables.$blueColor;
+    background-color: variables.$purpleColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .contatos{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
 
 }
