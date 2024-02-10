@@ -12,7 +12,12 @@
     .container-text{
         
         @include mixins.tablet{
-            margin-left: 125px;
+            margin-left: 70px;
+        }
+
+        @include mixins.smartphone{
+            margin: 0 auto;
+            text-align: center;
         }
     }
 
@@ -33,6 +38,14 @@
             padding-top: 100px;
             
         }
+
+        @include mixins.smartphone{
+            font-size: 1.8em;
+            text-align: center;
+            margin-bottom: 20px;
+            padding-top: 250px;
+            text-shadow: 0px 0px 10px rgb(0, 0, 0);
+        }
     }
 
     .dev-text{
@@ -43,6 +56,11 @@
 
         @include mixins.notebook{
             margin-top: -10px;
+        }
+
+        @include mixins.smartphone{
+            text-align: center;
+            text-shadow: 0px 0px 10px rgb(0, 0, 0);
         }
     }
 
@@ -62,6 +80,13 @@
             right: 20%;
             top: 30%;
             height: 250px; 
+        }
+
+        @include mixins.smartphone{
+            right: 50%;
+            top: 20%;
+            height: 150px; 
+            transform: translate(50%);
         }
     }
 
@@ -98,6 +123,12 @@
         top: 23%;
         right: 8%;
     }
+
+    @include mixins.smartphone{
+        height: 41%;
+        top: 15%;
+        right: 21%;
+    }
 }
 
 .background-border{
@@ -122,6 +153,13 @@
         width: 250px;
         right: 17%;
         top: 35%;
+    }
+
+    @include mixins.smartphone{
+        height: 150px;
+        width: 150px;
+        right: 34%;
+        top: 22%;
     }
 }
 

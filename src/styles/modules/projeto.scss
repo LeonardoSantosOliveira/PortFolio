@@ -2,7 +2,7 @@
 @use 'mixins.scss';
 
 .projeto{
-    width: 100%;
+    width: 97%;
     padding: 20px;
     height: 625px;
     border-radius: 10px;
@@ -17,6 +17,10 @@
 
     @include mixins.notebook{
         height: 650px;
+    }
+
+    @include mixins.smartphone{
+        height: 750px;
     }
 
     &-image{

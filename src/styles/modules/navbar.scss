@@ -1,4 +1,5 @@
 @use 'variables.scss';
+@use 'mixins.scss';
 
 .navbar{
     
@@ -17,7 +18,6 @@
         font-weight: light;
         text-transform: capitalize;
         color: variables.$greenColor;
-
         &:hover{
             color: variables.$greenColor;
         }

@@ -12,7 +12,12 @@
 .container{
 
     @include mixins.tablet{
-        max-width: 900px;
+        max-width: 830px;
         margin: 0 auto;
+    }
+
+    @include mixins.smartphone{
+        max-width: 400px;
+        margin:  0 auto;
     }
 }

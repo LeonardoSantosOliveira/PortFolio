@@ -6,6 +6,10 @@
     background-color: variables.$blueColor;
     position: relative;
 
+    @include mixins.smartphone{
+        height: 80vh;
+    }
+
     .background-habilidades{
         background-image: url('../../images/assets/square-of-dots.svg');
         position: absolute;
@@ -25,6 +29,10 @@
 
             @include mixins.tablet{
                 width: 250px;
+            }
+
+            @include mixins.smartphone{
+                display: none;
             }
         }
     }
@@ -47,6 +55,10 @@
             height: 542px;
         }
 
+        @include mixins.smartphone{
+            display: none;
+        }
+
         img{
             height: 100%;
             }
@@ -60,6 +72,11 @@
 
         @include mixins.notebook{
             margin-bottom: 80px;
+        }
+
+        @include mixins.smartphone{
+            margin-bottom: 40px;
+            margin-top: 40px;
         }
     }
 
@@ -95,6 +112,11 @@
             height: 100px;
         }
 
+        @include mixins.smartphone{
+            width: 90px;
+            height: 90px;
+        }
+
         &:hover::after{
             width: 100%;
         }
@@ -124,6 +146,10 @@
             @include mixins.tablet{
                 font-size: .8em;
             }
+
+            @include mixins.smartphone{
+                font-size: .7em;
+            }
         }
 
         &-icon{
@@ -138,6 +164,10 @@
                 font-size: 3em;
             }
 
+            @include mixins.smartphone{
+                font-size: 2.8em;
+            }
+
             img{
                 height: 78px;
                 width: 78px;
@@ -148,6 +178,11 @@
                 }
 
                 @include mixins.tablet{
+                    width: 40px;
+                    height: 40px;
+                }
+
+                @include mixins.smartphone{
                     width: 40px;
                     height: 40px;
                 }
