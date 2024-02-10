@@ -1,4 +1,5 @@
 @use 'variables.scss';
+@use 'mixins.scss';
 
 .colored{
     color: variables.$greenColor;
@@ -11,8 +12,21 @@
 .section-title{
     font-weight: bolder;
     font-size: 4em;
+    margin-bottom: 12px;
+
+    @include mixins.notebook{
+        font-size: 3em;
+    }
+
+    @include mixins.tablet{
+        font-size: 2.7em;
+    }
 }
 
 .text{
     color: variables.$purpleColor;
+
+    @include mixins.tablet{
+        font-size: .95em;
+    }
 }

@@ -1,12 +1,29 @@
+@use '../modules/variables.scss';
+@use '../modules/mixins.scss';
+
 #sobreMim{
     height: 100vh;
     padding-top: 200px;
     z-index: 100;
     position: relative;
 
-    .col-6:nth-child(2){
+    @include mixins.notebook{
+        padding-top: 80px;
+        height: 120vh;
+    }
+
+    @include mixins.tablet{
+        padding-top: 50px;
+        height: 100vh;
+    }
+
+    .estudos{
         margin-top: 200px;
         text-align: right;
+
+        @include mixins.notebook{
+            margin-top: 320px;
+        }
     }
 
     .text{
@@ -25,6 +42,16 @@
             right: 20%;
             top: 18%;
             height: 150px;
+            
+            @include mixins.notebook{
+                right: 15%;
+                top: 13%;
+            }
+
+            @include mixins.tablet{
+                right: 7%;
+                top: 8%;
+            }
         }
 
         &-left{
@@ -41,6 +68,16 @@
             bottom: 20%;
             left: 25%;
             height: 150px;
+
+            @include mixins.notebook{
+                bottom: 9%;
+                left: 25%;
+            }
+
+            @include mixins.tablet{
+                bottom: 5%;
+                left: 37%;
+            }
         }
     }
 }
