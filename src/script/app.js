@@ -1,4 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
+    
+    const navButtonsMenu = document.querySelectorAll('.nav-link');
+    navButtonsMenu.forEach((e) => {
+        e.addEventListener('click', fecharMenu);
+    })
 
     document.querySelector("#togglerMenuButton").addEventListener('click', abrirMenu);
     document.querySelector("#buttonCloseMenu").addEventListener('click', fecharMenu);
@@ -12,8 +17,6 @@ const abrirMenu = () => {
     navMenu.classList.remove("hidden")
     navMenu.classList.remove("animate__fadeOutRight");
     navMenu.classList.add("animate__fadeInRight");
-
-
 }
 
 const fecharMenu = () => {
