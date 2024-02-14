@@ -100,7 +100,7 @@
         @include mixins.smartphone{
             display: block;
             position: absolute;
-            bottom: 47%;
+            bottom: 45%;
             right: 0%;
         }
     }
@@ -150,9 +150,9 @@
     }
 
     @include mixins.smartphone{   
-        height: 232%;
-        top: -85%;
-        right: 59%;
+        height: 400px;
+        right: 5%;
+        top: -80px;
     }
 }
 
