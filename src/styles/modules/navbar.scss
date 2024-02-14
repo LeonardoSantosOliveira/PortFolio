@@ -57,15 +57,19 @@
     right: 3%;
     top: 3%;
     z-index: 9990;
+    animation-duration: .4s;
+
 
     .buttonCloseMenu{
         font-size: 60px;
         position: absolute;
         right: 30px;
         top: 0;
+        font-weight: lighter;
 
         i{
             cursor: pointer;
+            font-weight: light;
         }
     }
 
