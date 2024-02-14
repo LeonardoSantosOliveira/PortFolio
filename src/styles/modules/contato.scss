@@ -9,7 +9,8 @@
     text-align: center;
 
     @include mixins.smartphone{
-        margin-bottom: 30px;
+        margin-bottom: 50px;
+        width: 50%;
     }
 
     &-link{

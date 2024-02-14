@@ -18,6 +18,11 @@
         font-weight: light;
         text-transform: capitalize;
         color: variables.$greenColor;
+
+        @include mixins.smartphone{
+            font-size: 2em;
+            font-weight: bold;
+        }
         &:hover{
             color: variables.$greenColor;
         }
@@ -32,7 +37,13 @@
         justify-content: center;
         align-items: end;
         gap: 10px;
+        z-index: 980;
         cursor: pointer;
+
+        @include mixins.smartphone{
+            right: 7%;
+            top: 7%;
+        }
     }
 
     .bar {

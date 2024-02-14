@@ -9,6 +9,10 @@
     background-position: center;
     background-size: cover;
 
+    @include mixins.smartphone{
+        background: linear-gradient(180deg, rgba(72,49,212,1) 60%, rgba(204,242,129,1) 60%);
+    }
+
     .container-text{
         
         @include mixins.tablet{
@@ -18,6 +22,10 @@
         @include mixins.smartphone{
             margin: 0 auto;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
     }
 
@@ -35,16 +43,13 @@
         
         @include mixins.tablet{
             font-size: 2em;
-            padding-top: 100px;
-            
+            padding-top: 100px;           
         }
 
         @include mixins.smartphone{
             font-size: 1.8em;
             text-align: center;
-            margin-bottom: 20px;
-            padding-top: 250px;
-            text-shadow: 0px 0px 10px rgb(0, 0, 0);
+            padding-top: 20px;
         }
     }
 
@@ -60,7 +65,8 @@
 
         @include mixins.smartphone{
             text-align: center;
-            text-shadow: 0px 0px 10px rgb(0, 0, 0);
+            font-size: 1.5em;
+            margin-top: 0px;
         }
     }
 
@@ -83,19 +89,35 @@
         }
 
         @include mixins.smartphone{
-            right: 50%;
-            top: 20%;
             height: 150px; 
-            transform: translate(50%);
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .img-hero{
+        margin: 0 auto !important;
+
+        @include mixins.smartphone{
+            display: block;
+            bottom: 12%;
+            position: absolute;
+            right: -35%;
         }
     }
 
     .image{
         position: absolute;
+
+
+        @include mixins.smartphone{
+            position: static;
+            margin: 0 auto;
+        }
         
         &-img{
             height: 100%;
             z-index: 10;
+            margin: 0 auto;
         }
     }
 
@@ -124,10 +146,10 @@
         right: 8%;
     }
 
-    @include mixins.smartphone{
-        height: 41%;
-        top: 15%;
-        right: 21%;
+    @include mixins.smartphone{   
+        height: 232%;
+        top: -85%;
+        right: 59%;
     }
 }
 
@@ -157,9 +179,9 @@
 
     @include mixins.smartphone{
         height: 150px;
-        width: 150px;
-        right: 34%;
-        top: 22%;
+        width: 150px;   
+        right: 30%;
+        top: 68%;
     }
 }
 
@@ -178,6 +200,10 @@
 
         @include mixins.tablet{
             height: 550px;
+        }
+
+        @include mixins.smartphone{
+            height: 250px;
         }
     }
 }
