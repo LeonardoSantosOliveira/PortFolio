@@ -10,7 +10,7 @@
     background-size: cover;
 
     @include mixins.smartphone{
-        background: linear-gradient(180deg, rgba(72,49,212,1) 60%, rgba(204,242,129,1) 60%);
+        background: linear-gradient(180deg, rgba(72,49,212,1) 40%, rgba(204,242,129,1) 40%);
     }
 
     .container-text{
@@ -99,9 +99,9 @@
 
         @include mixins.smartphone{
             display: block;
-            bottom: 12%;
             position: absolute;
-            right: -35%;
+            bottom: 47%;
+            right: 0%;
         }
     }
 
@@ -110,14 +110,17 @@
 
 
         @include mixins.smartphone{
-            position: static;
-            margin: 0 auto;
+            position: absolute;
         }
         
         &-img{
             height: 100%;
             z-index: 10;
             margin: 0 auto;
+
+            @include mixins.smartphone{
+                height: 150%;
+            }
         }
     }
 
@@ -178,10 +181,10 @@
     }
 
     @include mixins.smartphone{
-        height: 150px;
-        width: 150px;   
-        right: 30%;
-        top: 68%;
+        height: 225px;
+        width: 225px;
+        right: 15%;
+        top: 57%;
     }
 }
 

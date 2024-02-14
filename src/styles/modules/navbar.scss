@@ -41,6 +41,7 @@
         cursor: pointer;
 
         @include mixins.smartphone{
+            position: fixed;
             right: 7%;
             top: 7%;
         }
