@@ -51,9 +51,11 @@
         height: 3px;
         width: 50px;
         background-color: variables.$blueColor;
+        transition: all ease .3s;
 
         &:nth-child(2){
             width: 30px;
+            transition: all ease .3s;
         }
     }
 }

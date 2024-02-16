@@ -26,14 +26,24 @@ const fecharMenu = () => {
 };
 
 const alteraCorNavButton = () => { 
-    const alturaHero = document.querySelector("#hero").clientTop;
-    const alturaSobreMim = document.querySelector("#sobreMim").offsetHeight;
-    const alturaHabilidades = document.querySelector("#habilidades").offsetHeight;
-    const alturaProjetos = document.querySelector("#projetos").offsetHeight;
-    const alturaContato = document.querySelector("#contato").offsetHeight;
+    const alturaHero = document.querySelector("#hero").getBoundingClientRect();
+    const alturaSobreMim = document.querySelector("#sobreMim").getBoundingClientRect();
+    const alturaHabilidades = document.querySelector("#habilidades").getBoundingClientRect();
+    const alturaProjetos = document.querySelector("#projetos").getBoundingClientRect();
+    const alturaContato = document.querySelector("#contato").getBoundingClientRect();
+    const menuButton = document.querySelectorAll(".bar");
 
-    
-    if (window.scrollY >= alturaHabilidades && window.scrollY <= alturaProjetos) {  
-        console.log(alturaHabilidades + ',' + alturaProjetos + ',' )
+    if (alturaHabilidades.y <= 29 && alturaProjetos.y > 31){
+        menuButton.forEach((e) => {
+            e.style['background-color'] = '#CCF381';
+        })
+    } else if (alturaContato.y <= 29) {
+        menuButton.forEach((e) => {
+            e.style['background-color'] = '#CCF381';
+        })
+    } else {
+        menuButton.forEach((e) => {
+            e.style['background-color'] = '#4831D4';
+        })
     }
 }
