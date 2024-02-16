@@ -10,7 +10,7 @@
     background-size: cover;
 
     @include mixins.smartphone{
-        background: linear-gradient(180deg, rgba(72,49,212,1) 40%, rgba(204,242,129,1) 40%);
+        background: linear-gradient(180deg, rgba(72,49,212,1) 50%, rgba(204,242,129,1) 50%);
     }
 
     .container-text{
@@ -152,7 +152,7 @@
     @include mixins.smartphone{   
         height: 400px;
         right: 5%;
-        top: -80px;
+        top: -90px;
     }
 }
 
