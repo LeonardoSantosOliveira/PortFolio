@@ -1,14 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
-    
     const navButtonsMenu = document.querySelectorAll('.nav-link');
     navButtonsMenu.forEach((e) => {
         e.addEventListener('click', fecharMenu);
     })
-
+    
     document.querySelector("#togglerMenuButton").addEventListener('click', abrirMenu);
     document.querySelector("#buttonCloseMenu").addEventListener('click', fecharMenu);
     
-    window.addEventListener('scroll', alteraCorNavButton)
+    window.addEventListener('scroll', alteraCorNavButton);
 })
 
 
@@ -27,10 +26,14 @@ const fecharMenu = () => {
 };
 
 const alteraCorNavButton = () => { 
-    const barraMenu = document.querySelectorAll(".bar");
+    const alturaHero = document.querySelector("#hero").clientTop;
+    const alturaSobreMim = document.querySelector("#sobreMim").offsetHeight;
+    const alturaHabilidades = document.querySelector("#habilidades").offsetHeight;
+    const alturaProjetos = document.querySelector("#projetos").offsetHeight;
+    const alturaContato = document.querySelector("#contato").offsetHeight;
+
     
-    
+    if (window.scrollY >= alturaHabilidades && window.scrollY <= alturaProjetos) {  
+        console.log(alturaHabilidades + ',' + alturaProjetos + ',' )
+    }
 }
-
-
-// 1381 - 2019 / 3681
